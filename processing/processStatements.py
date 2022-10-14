@@ -1,3 +1,6 @@
+import processData
+
+
 def main():
     statements = []
     with open("data/student_statements.txt", "r")as f:
@@ -12,10 +15,20 @@ def main():
             statements.append(testimony)
             f.readline()
 
+
+    peoples = processData.main()
+
+    societies = []
     
-
-
-        
+    for i in peoples:
+        if i.society == "N/A":
+            continue
+        for j in i.society:
+            if not j in societies:
+                societies.append(j)
+    
+    for i in societies:
+        print(i)
 
 
 if __name__ == "__main__":
