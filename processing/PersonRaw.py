@@ -11,6 +11,9 @@ class PersonRaw():
 		self._society = society;
 		self._locations = []
 
+	def __repr__(self):
+		return f"{self._name}"
+
 	@property
 	def student_id(self):
 		return self._student_id
