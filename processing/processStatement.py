@@ -2,7 +2,6 @@ import csv
 import linecache
 from PersonRaw import PersonRaw
 from ast import literal_eval
-import json
 
 
 def main():
