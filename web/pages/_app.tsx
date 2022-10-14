@@ -1,5 +1,7 @@
 import type { AppProps } from "next/app";
 
+import "../styles/resets.css";
+
 // fix fontawesome icons
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";

@@ -1,0 +1,11 @@
+.header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item:hover() {
+  border-bottom: solid 1px black;
+}
