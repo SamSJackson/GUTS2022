@@ -10,3 +10,12 @@
 ## Description
 Let's go bitches
 
+## Plan
+
+### Frontend
+Made with React and visualising our data
+Interactive webapp, someway.
+
+
+### Data processing
+Processing NumPy data and exporting to a file to be read on the frontend.
