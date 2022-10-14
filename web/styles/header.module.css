@@ -1,0 +1,12 @@
+.header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.item:hover() {
+  border-bottom: solid 1px black;
+}
