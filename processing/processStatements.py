@@ -1,4 +1,6 @@
+from os import stat
 import processData
+import csv
 
 
 def main():
@@ -16,6 +18,13 @@ def main():
             f.readline()
 
 
+    with open('Statements.csv', 'w', newline='') as f:
+        write = csv.writer(f)
+        for statement in statements:
+            write.writerow(statement)
+            csv.DictWriter(f, fieldnames = statement).writerow(statement)
+
+
     peoples = processData.main()
 
     societies = []
@@ -27,8 +36,10 @@ def main():
             if not j in societies:
                 societies.append(j)
     
-    for i in societies:
-        print(i)
+    with open('Societies.csv', 'w', newline='') as f:
+        write = csv.writer(f)
+        for society in societies:
+            write.writerow([society])
 
 
 if __name__ == "__main__":
