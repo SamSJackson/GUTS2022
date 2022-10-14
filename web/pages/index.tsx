@@ -1,13 +1,27 @@
+import { GetStaticProps, NextPage } from "next";
+import BuildingsMap from "../components/BuildingsMap";
 import Header from "../components/header";
-import Map from "../components/Map";
+import get_buildings from "../loaders/get_buildings";
 
-function HomePage() {
+interface props {
+  buildings: Building[];
+}
+
+const HomePage: NextPage<props> = ({ buildings }) => {
   return (
     <div>
       <Header />
-      <Map />
+      <BuildingsMap buildings={buildings} selected="" />
     </div>
   );
-}
+};
+
+export let getStaticProps: GetStaticProps<props> = async (context) => {
+  return {
+    props: {
+      buildings: get_buildings(),
+    },
+  };
+};
 
 export default HomePage;
