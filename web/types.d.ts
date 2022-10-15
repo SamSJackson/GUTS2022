@@ -1,7 +1,7 @@
 interface Visit {
   start: string;
   end: string;
-  location: number[];
+  geo_loc: number[];
   student_ID: string;
 }
 
@@ -13,7 +13,7 @@ interface Lecture {
 
 interface Building {
   name: string;
-  geolocation: [number, number];
+  geo_loc: [number, number];
   opens: string;
   closes: string;
   lecture: Lecture;
