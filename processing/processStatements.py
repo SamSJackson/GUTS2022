@@ -11,7 +11,10 @@ def main():
             testimony = {}
             f.readline()
             f.readline()
-            key= f.readline().strip()[6:]
+            if(i == 11):
+                key= f.readline().strip()[14:]
+            else:
+                key= f.readline().strip()[6:]
             value =f.readline().strip()[11:]
             testimony[key] = value
             statements.append(testimony)
