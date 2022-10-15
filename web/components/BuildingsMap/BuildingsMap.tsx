@@ -20,7 +20,7 @@ const BuildingsMap: FC<bMapProps> = ({ buildings, selected }) => {
 
           let icon = selected === slug ? BuildingMarkerWhite : BuildingMarker;
           return (
-            <Marker icon={icon} position={each.geolocation}>
+            <Marker icon={icon} position={each.geo_loc}>
               <Popup>
                 <Link href={`/building/${slug}`}>{each.name}</Link>
               </Popup>
