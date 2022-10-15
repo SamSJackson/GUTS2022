@@ -1,0 +1,15 @@
+.spacer {
+  height: 10vh;
+}
+
+.article {
+  margin: 10px 30px;
+}
+
+.statement {
+  margin: 20px 0;
+}
+
+.sectionTitle {
+  border-bottom: 1px solid black;
+}

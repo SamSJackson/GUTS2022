@@ -1,0 +1,28 @@
+.list {
+  margin: 20px 100px;
+  padding: 10px;
+}
+
+.item {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  transition: all 1s;
+}
+
+.item:hover {
+  transform: scale(110%);
+}
+
+.item > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item > p {
+  border-bottom: 1px solid black;
+}
