@@ -1,54 +1,63 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import Header from "../../components/header";
-import get_building from "../../loaders/get_building";
-import load_buildings from "../../loaders/load_buildings";
-import slugify_building from "../../loaders/slugify_building";
+import PersonVisits from "../../components/PersonVisits";
+import get_person from "../../loaders/get_person";
+import load_people from "../../loaders/load_people";
+import slugify_person from "../../loaders/slugify_person";
 
-import styles from "/styles/building.module.css";
+import styles from "/styles/person.module.css";
 
 interface props {
-  building: Building;
-  allBuildings: Building[];
+  person: Person;
 }
 
-const buildingPage: NextPage<props> = ({ building, allBuildings }) => {
+const personPage: NextPage<props> = ({ person }) => {
   return (
     <div>
       <Header />
+      <div className={styles.spacer} />
       <article className={styles.article}>
-        <h2>{building.name}</h2>
-        <p className={styles.description}>{building.description}</p>
-        <code>open {building.opens}</code>
+        <h2>{person.name}</h2>
+        <h5>ID: {person.student_id}</h5>
+        {person.interview && (
+          <section className={styles.statement}>
+            <h4 className={styles.sectionTitle}>Statement/Interview:</h4>
+            <p>{person.interview}</p>
+          </section>
+        )}
+        <section>
+          <h4 className={styles.sectionTitle}>Visits:</h4>
+          <PersonVisits visits={person.visits} />
+        </section>
       </article>
     </div>
   );
 };
 
 export let getStaticPaths: GetStaticPaths = async () => {
-  const buildingNames: string[] = load_buildings().map(slugify_building);
+  const pids: string[] = load_people().map(slugify_person);
 
-  const paths = buildingNames.map((building) => {
+  const paths = pids.map((pid) => {
     return {
-      params: { building },
+      params: { pid },
     };
   });
   return { paths, fallback: false };
 };
 
 interface IParams extends ParsedUrlQuery {
-  building: string;
+  pid: string;
 }
 
 export let getStaticProps: GetStaticProps = async (context) => {
-  let { building } = context.params as IParams;
+  let { pid } = context.params as IParams;
 
-  let building_obj = get_building(building);
+  let person = get_person(pid);
   let props = {
-    building: building_obj,
-    allBuildings: load_buildings(),
+    person,
   };
   return { props };
 };
 
-export default buildingPage;
+export default personPage;
