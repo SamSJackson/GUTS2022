@@ -1,7 +1,7 @@
 interface Visit {
   start: string;
   end: string;
-  geo_loc: number[];
+  location: number[];
   student_ID: string;
 }
 
@@ -24,5 +24,5 @@ interface Person {
   name: string;
   student_id: string;
   interview?: string;
-  timeline: Visit[];
+  visits: Visit[];
 }
