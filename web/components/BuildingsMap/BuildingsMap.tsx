@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import { Marker, Popup } from "react-leaflet";
-import { slugify } from "../../loaders/slugify";
+import slugify_building from "../../loaders/slugify_building";
 import BuildingMarker from "../BuildingMarker";
 import BuildingMarkerWhite from "../BuildingMarkerWhite";
 import Map from "../Map";
@@ -16,7 +16,7 @@ const BuildingsMap: FC<bMapProps> = ({ buildings, selected }) => {
     <div>
       <Map>
         {buildings.map((each) => {
-          let slug = slugify(each);
+          let slug = slugify_building(each);
 
           let icon = selected === slug ? BuildingMarkerWhite : BuildingMarker;
           return (

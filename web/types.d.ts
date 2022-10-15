@@ -1,7 +1,7 @@
 interface Visit {
   start: string;
   end: string;
-  location: string;
+  location: number[];
   student_ID: string;
 }
 
