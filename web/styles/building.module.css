@@ -1,15 +1,33 @@
 .article {
-  position: absolute;
-  top: 10vh;
-  padding: 10px;
-  z-index: 10;
+  position: sticky;
+  bottom: calc(-180%);
+  min-height: 30vh;
+  padding: 15px;
+  z-index: 9;
   background-color: rgba(255, 255, 255, 0.635);
+  /* margin-bottom: 20vh; */
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 3px 10px;
+  padding: 0 0 5px;
+  border-bottom: black 1px solid;
 }
 
 .description {
   border-radius: 15px;
-  margin: 5px;
-  padding: 5px;
+  padding: 10px;
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
   background-color: white;
+}
+
+.sectionTitle {
+  margin: 5px 3px;
+}
+
+.graph {
 }
