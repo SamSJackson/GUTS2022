@@ -1,7 +1,8 @@
 import { GetStaticProps } from "next";
-import { FC } from "react";
+import { FC, useState } from "react";
 import Header from "../../components/header";
 import load_people from "../../loaders/load_people";
+import List from "../../components/List";
 
 import styles from "/styles/people.module.css";
 
@@ -10,15 +11,14 @@ interface props {
 }
 
 let peoplePage: FC<props> = ({ people }) => {
+  const [word, setWord] = useState("");
+  
   return (
     <div>
       <Header />
       <div className={styles.spacer} />
-      <div>this is the search bar</div>
-      {people.slice(0, 5).map((person) => {
-        return <div>{person.name}</div>;
-      })}
-      This will be a list of people allows pagination & searching.
+      <input id="search-input" onChange={e => setWord(e.target.value)} value={word} />
+      <List people={people} word={word}/>
     </div>
   );
 };
