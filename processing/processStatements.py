@@ -21,11 +21,11 @@ def main():
             f.readline()
 
 
-    with open('Statements.csv', 'w', newline='') as f:
-        write = csv.writer(f)
-        for statement in statements:
-            write.writerow(statement)
-            csv.DictWriter(f, fieldnames = statement).writerow(statement)
+    #with open('Statements.csv', 'w', newline='') as f:
+        #write = csv.writer(f)
+        #for statement in statements:
+            #write.writerow(statement)
+            #csv.DictWriter(f, fieldnames = statement).writerow(statement)
 
 
     peoples = processData.main()
