@@ -1,6 +1,28 @@
+interface Visit {
+  start: string;
+  end: string;
+  location: string;
+  student_ID: string;
+}
+
+interface Lecture {
+  name: string;
+  start: string;
+  end: string;
+}
+
 interface Building {
   name: string;
   geolocation: [number, number];
-  opening_times: string;
+  opens: string;
+  closes: string;
+  lecture: Lecture;
   description: string;
+}
+
+interface Person {
+  name: string;
+  student_id: string;
+  interview?: string;
+  timeline: Visit[];
 }
