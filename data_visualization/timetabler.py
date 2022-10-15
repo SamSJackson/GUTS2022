@@ -22,9 +22,10 @@ def main():
                      }
 
 
+    print(f'timetable:  Boyd Orr Building Lecutre  is {locationTimes["boyd orr building"][1][0]}  at {locationTimes["boyd orr building"][1][1][0]} to {locationTimes["boyd orr building"][1][1][1]}' )
 
 
-    pass
+
 
 
 if __name__ == "__main__":
