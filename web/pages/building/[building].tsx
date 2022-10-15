@@ -3,8 +3,8 @@ import { ParsedUrlQuery } from "querystring";
 import BuildingsMap from "../../components/BuildingsMap";
 import Header from "../../components/header";
 import get_building from "../../loaders/get_building";
-import get_buildings from "../../loaders/get_buildings";
-import { slugify } from "../../loaders/slugify";
+import load_buildings from "../../loaders/load_buildings";
+import slugify_building from "../../loaders/slugify_building";
 
 import styles from "/styles/building.module.css";
 
@@ -17,8 +17,11 @@ const buildingPage: NextPage<props> = ({ building, allBuildings }) => {
   return (
     <div>
       <Header />
-      <BuildingsMap buildings={allBuildings} selected={slugify(building)} />
-
+      <BuildingsMap
+        buildings={allBuildings}
+        selected={slugify_building(building)}
+      />
+      <div className={styles.top} />
       <article className={styles.article}>
         <h2>{building.name}</h2>
         <p className={styles.description}>{building.description}</p>
@@ -29,7 +32,7 @@ const buildingPage: NextPage<props> = ({ building, allBuildings }) => {
 };
 
 export let getStaticPaths: GetStaticPaths = async () => {
-  const buildingNames: string[] = get_buildings().map(slugify);
+  const buildingNames: string[] = load_buildings().map(slugify_building);
 
   console.log(buildingNames);
   const paths = buildingNames.map((building) => {
@@ -51,7 +54,7 @@ export let getStaticProps: GetStaticProps = async (context) => {
   let building_obj = get_building(building);
   let props = {
     building: building_obj,
-    allBuildings: get_buildings(),
+    allBuildings: load_buildings(),
   };
   return { props };
 };
