@@ -3,7 +3,7 @@
     "name": "Boyd Orr Building",
     "opens": "2020-10-10 08:00:00",
     "closes": "2020-10-10 21:00:00",
-    "geo_loc": [55.8730105, -4.2925361],
+    "geo_loc": [55.8735737, -4.2926741],
     "description": "The Boyd Orr Building is named for the Nobel laureate Lord Boyd Orr of Brechin (1880-1971) - Rector of the University from 1945 to 1947 and Chancellor of the University from 1946 to 1971.It was designed in 1964 by architects JL Gleave & Partners primarily as a general science building to act as an overflow for the overcrowded departmental buildings largely for first-year students given the projected 50% increase in students during the late 1960s and early 1970s. Sir Eric Ashby officially opened the \u00c2\u00a31.25m Boyd Orr building on 3 October 1972. This building hosts Computing Science lectures from 1000 to 1200.",
     "visits": [
       {
@@ -396,7 +396,7 @@
     "name": "James Watt Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8708777, -4.2893462],
+    "geo_loc": [55.8708995, -4.2872286],
     "description": "The James Watt Engineering Buildings are named after the famous engineer and mathematical instrument maker to the University from 1756 to 1764. The building was opened by Lord Kelvin on Thursday 3 September 1901 as part of the International Engineering Congress hosted by the University. The James Watt Nanofabrication Centre (JWNC) is located in the James Watt Building and was built in 2005 to house all the micro and nanofabrication facilities at the University of Glasgow in a single clean room. The clean room houses over \u00c2\u00a325M of nanofabrication tools. This building hosts Engineering lectures every day from 1000 to 1300.",
     "visits": [
       {
@@ -621,7 +621,7 @@
     "name": "Adam Smith Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8737694, -4.2920551],
+    "geo_loc": [55.8737694, -4.2900032],
     "description": "The Adam Smith Building (named in honour of the moral philosopher and political economist) was designed by David Harvey and formally opened on 2 November 1967. The mosaic mural at the foot of the main staircase was the work of George Garson- the head of the Mural Design and Stained Glass department at the Glasgow School of Art. This building hosts Business lectures from 1000 to 1100.",
     "visits": [
       {
@@ -894,7 +894,7 @@
     "name": "Main Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8714732, -4.2927198],
+    "geo_loc": [55.871843, -4.288341],
     "description": "This section of the university hosts Philosophy lectures from 0900 to 1100 Veterinary Medicine lectures from 1000 until 1200 and mathematics lectures from 1100 until 1300.",
     "visits": [
       {
@@ -1413,7 +1413,7 @@
     "name": "Wolfson Medical Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8729239, -4.295317],
+    "geo_loc": [55.8729374, -4.293249],
     "description": "The Wolfson Medical School Building was designed by Reiach and Hall in 1999 and was officially opened in 2003. It was named the Wolfson Medical School to mark the major gift from the Wolfson Foundation towards the \u00c2\u00a317.5m cost of the project. The roof was designed by Arup Fa\u00c3\u00a7ade Engineering and constructed using 16m-long structural laminated glass beams \u00e2\u20ac\u201c believed to be the first use of glass engineering on this scale. The Princess Royal opened the building formally on 3 April 2003 and in the same year the building won a Royal Institute of British Architects\u00e2\u20ac\u2122 Award. This building hosts Medicine lectures from 1300 to 1500.",
     "visits": [
       {
@@ -1668,7 +1668,7 @@
     "name": "Glasgow University Union",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 23:00:00",
-    "geo_loc": [55.8723758, -4.285949],
+    "geo_loc": [55.8725047, -4.2849708],
     "description": "Glasgow University Union was founded in 1885. Before the 1920s the union was accommodated in the John McIntyre Building- which opened in 1890. The premises became too cramped for the growing number of students at the University. This is a great location for students to unwind.",
     "visits": [
       {
@@ -2085,7 +2085,7 @@
     "name": "The Hive",
     "opens": "2020-10-10 22:00:00",
     "closes": "2020-10-11 02:00:00",
-    "geo_loc": [55.8728276, -4.2844698],
+    "geo_loc": [55.872865, -4.284643],
     "description": "An extension to the Union (called 'The Hive') was designed by Richard De'Ath of Keppie and opened in 1965. A further beer bar extension was designed by the same architects and was opened in late 1969. In 2014 work began to demolish and replace the Glasgow University Union's Hive nightclub led by Heron Bros Ltd as part of an extensive refurbishment of the Sports & Recreation centre of the Stevenson Building. This is a great location for students to have a night out. Entry into this club is strictly over 18s only- a rule which is strictly enforced as it would be illegal for under 18s to attend.",
     "visits": [
       {
@@ -2208,7 +2208,7 @@
     "name": "Sir Alwyn Williams Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8739511, -4.2940459],
+    "geo_loc": [55.8739703, -4.2919055],
     "description": "The Sir Alwyn Williams Building is located on the corner between Lilybank Gardens and University Gardens and is named for Sir Alwyn Williams (1921-2004)- Principal and Vice Chancellor of the University from 1976 to 1988. A Computing Science building had been under consideration since the 1970s when the Computing Science department was temporarily housed in townhouses on Lilybank Terrace. The Sir Alwyn Williams Building was opened on 22 June 2007 by Professor Anne Glover (Chief Scientific Advisor for Scotland) and Lady Joan Williams (the widow of Principal Sir Alwyn Williams).",
     "visits": [
       {
@@ -2379,7 +2379,7 @@
     "name": "Library",
     "opens": "2020-10-10 07:00:00",
     "closes": "2020-10-11 02:00:00",
-    "geo_loc": [55.8739571, -4.2940459],
+    "geo_loc": [55.8733888, -4.289028],
     "description": "The new Library building on Hillhead Street was designed by William Whitfield and completed 1968 under the stewardship of University Librarian Robert Ogilvie MacKenna to replace the outgrown library accommodation in the north west Arts Quadrangle- now the Kelvin Gallery.",
     "visits": [
       {
@@ -2784,7 +2784,7 @@
     "name": "Queen Margaret Union",
     "opens": "2020-10-10 08:00:00",
     "closes": "2020-10-10 23:00:00",
-    "geo_loc": [55.8735992, -4.2935842],
+    "geo_loc": [55.8736412, -4.2915321],
     "description": "The Queen Margaret Union (QMU) on 22 University Gardens was designed by Walter Underwood & Partners and opened in 1968. A society for the students of Queen Margaret College was founded in 1890 and had the use of a basement room within the College building of North Park House.",
     "visits": [
       {
@@ -3201,7 +3201,7 @@
     "name": "St Andrews Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8717345, -4.2818099],
+    "geo_loc": [55.8716388, -4.2796039],
     "description": "The St Andrew's Building was originally built in 1913 by Walter Robert Watson of Cowan & Watson for the Glasgow & West of Scotland College of Domestic Science- established in 1908. The college was renamed Queens College in 1975 and the building was acquired from Glasgow Caledonian University by the University in 1998. In 2003 the St Andrew's Building was officially opened by Deputy First Minister Jim Wallace to house the Faculty- now School of Education. This building hosts English Literature lectures from 0900 to 1200.",
     "visits": [
       {
@@ -3462,7 +3462,7 @@
     "name": "Kelvingrove Park",
     "opens": "2020-10-11 00:00:00",
     "closes": "2020-10-11 00:00:00",
-    "geo_loc": [55.8689911, -4.2847528],
+    "geo_loc": [55.8690076, -4.2823603],
     "description": "This is a park. This is a great location for students to unwind in between lectures. There is a skate park grass a pond a statue up a hill and the Stewart Memorial Fountain.",
     "visits": [
       {
@@ -3487,7 +3487,7 @@
         "student_id": "2453876J",
         "location": "Kelvingrove Park",
         "start": "2020-10-10 07:55:00",
-        "end": "2020-10-10 07:37:00"
+        "end": "2020-10-10 08:37:00"
       },
       {
         "student_id": "2729563B",
@@ -3879,7 +3879,7 @@
     "name": "Joseph Black Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8721791, -4.2925265],
+    "geo_loc": [55.8720857, -4.293137],
     "description": "The School of Chemistry was originally housed in an isolated octagonal structure located outside the south-east corner of the Main Building. Although the first two blocks were largely complete in 1939 the official opening ceremony was abandoned following the declaration of war on 3 September. The entire Chemistry building was finally officially opened on 19 March 1954. The building was renamed the Joseph Black Building in 1997. A pioneering Chemist and University lecturer from 1756-1766 he first identified carbon dioxide and carried out pioneering research on latent and specific heat. This building hosts Chemistry lectures from 1000 to 1100.",
     "visits": [
       {
@@ -3984,7 +3984,7 @@
     "name": "Kelvin Building",
     "opens": "2020-10-10 09:00:00",
     "closes": "2020-10-10 17:00:00",
-    "geo_loc": [55.8721791, -4.2925265],
+    "geo_loc": [55.8715591, -4.2917287],
     "description": "The Kelvin Building (originally known as the Natural Philosophy Building) was named after Lord Kelvin and was designed by Scottish architect James Miller. The Kelvin Building and the West Medical Building were constructed of Giffnock sandstone to match the main buildings and roofed with blue Westmoreland slates. This building hosts Physics lectures from 0900 to 1100.",
     "visits": [
       {
