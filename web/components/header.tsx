@@ -7,6 +7,9 @@ const Header = () => {
       <Link href={"/"}>
         <h1 className={styles.item}>Whodunnit?</h1>
       </Link>
+      <Link href={"/people"}>
+        <h1 className={styles.item}>Potential Perps</h1>
+      </Link>
     </header>
   );
 };
