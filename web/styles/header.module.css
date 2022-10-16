@@ -16,3 +16,17 @@
 .item:hover() {
   border-bottom: solid 1px black;
 }
+
+.person-component-link a:link {
+    text-decoration: none;
+}
+.person-component-link a:visited {
+    text-decoration: none;
+}
+.person-component-link a:hover {
+    text-decoration: none;
+}
+.person-component-link a:active {
+    text-decoration: none;
+}
+
