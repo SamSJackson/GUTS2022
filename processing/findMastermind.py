@@ -90,7 +90,7 @@ def main():
                 #print(person[0])
             else:
                 break
-        if confirmed == 6:
+        if confirmed == len(perp):
             print(person[0])
             #   break   
 

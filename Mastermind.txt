@@ -1,0 +1,66 @@
+Abdul Murphy: In Boyd Orr after closing time
+Oscar Brown: In 2 places at once 3 times
+Alice Patterson: In 2 places at once 1 time, didn't go to morning lecture
+Paul Butler: In 2 places at once 1 time
+Jonny Craig: Statement and timetable don't match
+
+This narrows it down to 5 possible masterminds: 
+Marilyn White
+Rosemary Jones    
+Scott Johnston    
+Charlotte Matthews
+Heather Yates   
+
+---
+
+All other timetables match so it has to be one of the people who made a statement, so by inputting each statement person into my mastermind finder these are the results
+
+Name:Matching Timetable
+1:Amy Powell:None
+2:Danny Thomas:None
+3:Stuart Wands:Scott Johnston
+4:Chloe Tyler:Scott Johnston,Heather Yates
+5:Marc Harrison:Scott Johnston,Heather Yates
+6:Gerald Jones:Heather Yates
+7:Lee James:None
+8:Danielle Cox:None
+9:Oscar Brown:None
+10:Katie Bell:Scott Johnston,Heather Yates
+11:Barry Robinson:Heather Yates
+12:Alice Patterson:N/A
+13:Beth Jones:None
+14:Eric Parkin:Scott Johnston,Heather Yates
+15:Angela Jones:None
+16:Russell Dixon:None
+17:Martin Smith:None
+18:Pamela Jones:None
+19:Jonny Craig:N/A
+20:Melanie Patterson:Scott Johnston
+21:Carolyn Bond:None
+22:Abdul Murphy:N/A
+23:Russell Matthews:None
+24:Jill Hill:Scott Johnston,Heather Yates
+25:Shaun Yates:Scott Johnston
+
+It cannot be anyone who had multiple results as that would leave it impossible to catch the mastermind with the data we have so this narrows perp 6 to 5 people:
+Stuart Wands 
+Gerald Jones 
+Barry Robinson 
+Melanie Patterson
+Shaun Yates
+
+---
+
+Gerald Jones and Barry Robinson have statements that clear them so that leaves 3 people all who correlate to Scott Johnston so he is the confirmed mastermind
+
+---
+
+Stuart Wands' statement claims that he got a Tesco meal deal with only ham which is impossible
+
+---
+
+Melanie Patterson has many pauses in her day, which may be he trying to come up with convincing lies, or may be her being tired from being out th previous day
+
+---
+
+Shaun Yates went out into Kelvingrove park for four hours to "sike himself up for minecraft"
