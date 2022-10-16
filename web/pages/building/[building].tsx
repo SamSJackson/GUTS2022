@@ -3,41 +3,54 @@ import { ParsedUrlQuery } from "querystring";
 import BuildingsMap from "../../components/BuildingsMap";
 import Header from "../../components/header";
 import get_building from "../../loaders/get_building";
-import get_buildings from "../../loaders/get_buildings";
-import { slugify } from "../../loaders/slugify";
+import load_buildings from "../../loaders/load_buildings";
+import load_building_graph from "../../loaders/load_building_graph";
+import slugify_building from "../../loaders/slugify_building";
 
 import styles from "/styles/building.module.css";
 
 interface props {
   building: Building;
+  graph: string;
   allBuildings: Building[];
 }
 
-const buildingPage: NextPage<props> = ({ building, allBuildings }) => {
+const buildingPage: NextPage<props> = ({ building, allBuildings, graph }) => {
   return (
     <div>
       <Header />
-      <BuildingsMap buildings={allBuildings} selected={slugify(building)} />
-
+      <BuildingsMap
+        buildings={allBuildings}
+        selected={slugify_building(building)}
+      />
+      <div />
       <article className={styles.article}>
-        <h2>{building.name}</h2>
+        <div className={styles.header}>
+          <h2>{building.name}</h2>
+          <h4>
+            open from {building.opens.slice(-9, -3)} to{" "}
+            {building.closes.slice(-9, -3)}
+          </h4>
+        </div>
+        <h4 className={styles.sectionTitle}>Description:</h4>
         <p className={styles.description}>{building.description}</p>
-        <code>open {building.opening_times}</code>
+        <section>
+          <h4>Visits</h4>
+          <div dangerouslySetInnerHTML={{ __html: graph }} />
+        </section>
       </article>
     </div>
   );
 };
 
 export let getStaticPaths: GetStaticPaths = async () => {
-  const buildingNames: string[] = get_buildings().map(slugify);
+  const buildingNames: string[] = load_buildings().map(slugify_building);
 
-  console.log(buildingNames);
   const paths = buildingNames.map((building) => {
     return {
       params: { building },
     };
   });
-  console.log(paths);
   return { paths, fallback: false };
 };
 
@@ -51,7 +64,8 @@ export let getStaticProps: GetStaticProps = async (context) => {
   let building_obj = get_building(building);
   let props = {
     building: building_obj,
-    allBuildings: get_buildings(),
+    allBuildings: load_buildings(),
+    graph: load_building_graph(building),
   };
   return { props };
 };

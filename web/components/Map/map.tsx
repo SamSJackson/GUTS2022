@@ -12,9 +12,9 @@ const Map: FC<mapProps> = ({ children }) => {
       center={[55.872925, -4.288128]}
       zoom={15}
       scrollWheelZoom={false}
-      style={{ height: "90vh", width: "100%", zIndex: 1 }}
+      style={{ height: "100vh", width: "100%", zIndex: 1 }}
       zoomControl={false}
-      // dragging={false}
+      dragging={false}
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
