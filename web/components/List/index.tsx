@@ -1,4 +1,5 @@
 import load_people from "../../loaders/load_people";
+import PersonComponent from "../PersonComponent";
 
 type Props = {
     people : Person[];
@@ -15,7 +16,7 @@ const List : React.FC<Props> = ({people, word}) => {
     return(
         <ul>
             {people.map((person : Person) => (
-                <li key={person.student_id}>{person.name}</li>
+                <PersonComponent person={person} />
             ))}
         </ul>
     )
