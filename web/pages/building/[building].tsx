@@ -5,18 +5,16 @@ import BuildingsMap from "../../components/BuildingsMap";
 import Header from "../../components/header";
 import get_building from "../../loaders/get_building";
 import load_buildings from "../../loaders/load_buildings";
-import load_building_graph from "../../loaders/load_building_graph";
 import slugify_building from "../../loaders/slugify_building";
 
 import styles from "/styles/building.module.css";
 
 interface props {
   building: Building;
-  graph: string;
   allBuildings: Building[];
 }
 
-const buildingPage: NextPage<props> = ({ building, allBuildings, graph }) => {
+const buildingPage: NextPage<props> = ({ building, allBuildings }) => {
   let g_spot = useRef<HTMLDivElement>();
 
   useEffect(() => {
@@ -33,7 +31,7 @@ const buildingPage: NextPage<props> = ({ building, allBuildings, graph }) => {
       g_spot.current.appendChild(slotHtml);
     };
     loadGraph();
-  }, []);
+  }, [building]);
 
   return (
     <div>
@@ -55,6 +53,7 @@ const buildingPage: NextPage<props> = ({ building, allBuildings, graph }) => {
         <p className={styles.description}>{building.description}</p>
         <section>
           <h4>Visits</h4>
+          {/* @ts-ignore */}
           <div ref={g_spot} />
         </section>
       </article>
@@ -84,7 +83,6 @@ export let getStaticProps: GetStaticProps = async (context) => {
   let props = {
     building: building_obj,
     allBuildings: load_buildings(),
-    graph: load_building_graph(building),
   };
   return { props };
 };

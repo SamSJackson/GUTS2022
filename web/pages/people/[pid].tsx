@@ -46,6 +46,7 @@ const personPage: NextPage<props> = ({ person, image }) => {
         )}
         <section>
           <h4 className={styles.sectionTitle}>Timeline </h4>
+          {/* @ts-ignore */}
           <div ref={g_spot} />
         </section>
         <section>
