@@ -8,7 +8,7 @@ import csv
 
 def main():
 
-    names = ["Abdul Murphy", "Oscar Brown", "Alice Patterson", "Paul Butler", "Jonny Craig"]
+    names = ["Abdul Murphy", "Oscar Brown", "Alice Patterson", "Paul Butler", "Jonny Craig", "Eric Parkin"]
 
     security_data = []
     with open("data/security_logs.csv", "r")as f:
@@ -90,7 +90,7 @@ def main():
                 #print(person[0])
             else:
                 break
-        if confirmed == len(perp):
+        if confirmed == 6:
             print(person[0])
             #   break   
 
