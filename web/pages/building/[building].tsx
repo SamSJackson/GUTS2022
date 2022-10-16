@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
+import { useEffect, useRef } from "react";
 import BuildingsMap from "../../components/BuildingsMap";
 import Header from "../../components/header";
 import get_building from "../../loaders/get_building";
@@ -16,6 +17,24 @@ interface props {
 }
 
 const buildingPage: NextPage<props> = ({ building, allBuildings, graph }) => {
+  let g_spot = useRef<HTMLDivElement>();
+
+  useEffect(() => {
+    let loadGraph = async () => {
+      let data = await fetch(
+        `/static/buildings/${slugify_building(building)}.html`
+      );
+      let graph = await data.text();
+
+      const slotHtml = document.createRange().createContextualFragment(graph);
+
+      if (!g_spot.current) return;
+      g_spot.current.innerHTML = "";
+      g_spot.current.appendChild(slotHtml);
+    };
+    loadGraph();
+  }, []);
+
   return (
     <div>
       <Header />
@@ -36,7 +55,7 @@ const buildingPage: NextPage<props> = ({ building, allBuildings, graph }) => {
         <p className={styles.description}>{building.description}</p>
         <section>
           <h4>Visits</h4>
-          <div dangerouslySetInnerHTML={{ __html: graph }} />
+          <div ref={g_spot} />
         </section>
       </article>
     </div>
